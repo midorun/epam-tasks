@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+.red {
+  grid-area: red;
+  background: #900;
+}
+
+.green {
+  grid-area: green;
+  background: #090;
+}
+
+.blue {
+  grid-area: blue;
+  background: #009;
+}
+
+.wrapper>div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  user-select: none;
+}
+
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-areas: "red blue""green blue";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
