@@ -33,6 +33,4 @@
   width: 100vw;
   display: grid;
   grid-template-areas: "red blue""green blue";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
 }
